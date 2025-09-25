@@ -37,3 +37,10 @@ dense_rank() over(order by salary desc)as rnk from employee;
 ```
 ![img alt](
 https://github.com/nsankareswari-70/Rank-Denserank-Rownumber-Sql-Analytical-Functions/blob/795b52f56b6ce48ff3dd1182122a21192336d1b6/sql2.png)
+```
+3.Give row number for employees by salary desc
+select emp_id,emp_name,department_id,salary,
+dense_rank() over(order by salary desc)as rnk,
+row_number() over(order by salary desc)as rn from employee;
+```
+
