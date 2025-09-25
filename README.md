@@ -45,3 +45,10 @@ row_number() over(order by salary desc)as rn from employee;
 ```
 ![img alt](https://github.com/nsankareswari-70/Rank-Denserank-Rownumber-Sql-Analytical-Functions/blob/177616dec7b64b3fd97b5db8e2bff26fd4214920/sql3.png)
 
+```
+4.Partition by department
+select emp_id,emp_name,department_id,salary,
+rank() over(partition by department_id order by salary desc)as rnk,
+dense_rank() over(partition by department_id order by salary desc)as densrnk,
+row_number() over(partition by department_id order by salary desc)as rn from employee;
+```
