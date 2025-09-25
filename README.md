@@ -63,4 +63,12 @@ dense_rank() over(partition by department_id order by salary desc)as densrnk
 ![img alt](
 https://github.com/nsankareswari-70/Rank-Denserank-Rownumber-Sql-Analytical-Functions/blob/fb518669224c01128207072468a750cfc81aa54a/sql5.png)
 
+```
+6. Find which employee is getting the highest salary in each department
+select * from(
+select emp_id,emp_name,department_id,salary,
+dense_rank() over(partition by department_id order by salary desc)as densrnk
+ from employee) t
+ where densrnk=1;
+```
 
