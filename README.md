@@ -30,4 +30,9 @@ from employee;
 ```
 ![img alt](
 https://github.com/nsankareswari-70/Rank-Denserank-Rownumber-Sql-Analytical-Functions/blob/9a382f122ff32497ea7083d83c85a93ef2e45a1a/sql1.png)
-  
+```
+2.Dense rank employees by salary
+  select emp_id,emp_name,department_id,salary,
+dense_rank() over(order by salary desc)as rnk from employee;
+```
+
