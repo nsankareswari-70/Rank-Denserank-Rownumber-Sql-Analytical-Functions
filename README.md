@@ -71,4 +71,5 @@ dense_rank() over(partition by department_id order by salary desc)as densrnk
  from employee) t
  where densrnk=1;
 ```
-
+![img alt](
+https://github.com/nsankareswari-70/Rank-Denserank-Rownumber-Sql-Analytical-Functions/blob/a3f9cff4abdaf02f0750c0b6e320736afc682c6b/sql6.png)
