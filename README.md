@@ -27,5 +27,6 @@ insert into employee(emp_id,emp_name,department_id,salary)values
 select emp_id,emp_name,department_id,salary,
 rank() over(order by salary desc) as rnk
 from employee;
-
+![img alt](
+https://github.com/nsankareswari-70/Rank-Denserank-Rownumber-Sql-Analytical-Functions/blob/9a382f122ff32497ea7083d83c85a93ef2e45a1a/sql1.png)
   
