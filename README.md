@@ -22,5 +22,10 @@ insert into employee(emp_id,emp_name,department_id,salary)values
 (8,'Ashish',200,5000);
 
 ```
+```
+1. Rank the employees by salary
+select emp_id,emp_name,department_id,salary,
+rank() over(order by salary desc) as rnk
+from employee;
 
   
